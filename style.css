@@ -1,0 +1,284 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	max-width: 100vw;
+	overflow: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	background-color: #FFFFFF;
+}
+
+
+canvas {
+	box-shadow: -3px 2px 9px 6px #000000;
+	cursor: pointer;
+	height: 400px;
+	width: 400px;
+	margin-left: 50px;
+	position: relative;
+	align-self: center;
+}
+
+.img {
+	position: relative;
+	max-height: 98%; 
+	max-width: 98%;
+	cursor: pointer;
+}
+
+.principal{
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	/*margin-left: 100px;*/
+	align-items: center;
+	margin-top: 20px;
+
+}
+
+.nombres{
+	display: flex;;
+	/*flex-direction: column;*/
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 300px;
+	margin-left: 50px;
+	padding: 20px;
+	border: 2px solid orange;
+	display: none;
+	background-color: rgb(250,250,130);
+}
+
+.pergamino{
+	position: relative;
+	max-width: 150px;
+	max-height: 50px;
+	/*display: block;*/
+
+}
+
+.sticker {
+	position: relative;
+	width: 100px;
+	height: 100px;
+	margin-right: : 5px;
+	margin-bottom: : 10px;
+	display: block;
+}
+
+#brush-icon {
+	display: block;
+	align-self: center;
+	font-size: 3em;
+	padding: 5%;
+	border: 1px solid white;
+	border-radius: 20%;
+	margin-top: 20%
+	margin-bottom: 20%;
+	margin-left: 10%;
+	box-shadow: inset 2px 2px white;
+}
+
+.characters {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	height: 400px;
+	width: 650px;
+	margin-bottom: 0px;
+	background: linear-gradient(0deg, rgba(23,237,253,1) 0%, rgba(255,255,255,1) 80%);
+	border: 4px solid #0488db;
+	
+}
+
+.grid{
+	display: grid;
+	height: 600px;
+	/*justify-content: stretch;*/
+	/*max-height: 600px;
+	max-width: 800px;*/
+	margin: auto;
+	margin-top: 20px;
+	padding: auto;
+	grid-template-columns: [x0] 50px [x1] 50px [x2] 50px [x3] 50px [x4] 50px [x5] 50px [x6] 50px [x7] 50px [x8]50px
+						 [x9] 50px [x10] 50px [x11] 50px [x12]; 
+	grid-template-rows: [y0] 100px [y1] 100px [y2] 50px [y3] 50px [y4] 50px [y5] 50px [y6];
+}
+.imgEmily{
+	grid-column: x2/x4;
+	grid-row: y0/y1;
+}
+.imgCast{
+	max-width: 100%;
+	max-height: 100%;
+	grid-column: x4/x8;
+	grid-row: y0/y1;
+}
+.imgKing{
+	grid-column: x8/x10;
+	grid-row: y0/y1;
+}
+.imgMuddy{
+	grid-column: x1/x3;
+	grid-row: y1/y2;
+}
+.imgPrinceAli{
+	grid-column: x3/x6;
+	grid-row: y1/y3;
+}
+.imgMarsala{
+	grid-column: x6/x9;
+	grid-row: y1/y3;
+}
+.imgPrinceSaladam{
+	grid-column: x9/x11;
+	grid-row: y1/y2;
+}
+.imgSasha{
+	grid-column: x0/x2;
+	grid-row: y2/y4;
+}
+.imgTutTut{
+	grid-column: x2/x4;
+	grid-row: y3/y5;
+}
+.imgKoot{
+	grid-column: x4/x6;
+	grid-row: y3/y5;
+}
+.imgSargentRomali{
+	grid-column: x6/x8;
+	grid-row: y3/y5;
+}
+.imgQueenFala{
+	grid-column: x8/x10;
+	grid-row: y3/y5;
+}
+.imgMrMopsy{
+	grid-column: x10/x12;
+	grid-row: y2/y4;
+}
+
+
+.field {
+	display: none;
+	flex-direction: row;
+	margin-left: 100px;
+}
+
+.tools {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	/*margin-top: 15px;*/
+}
+
+
+.tools .color-field {
+	height: 40px;
+	width: 40px;
+	min-height: 40px;
+	min-width: 40px;
+	cursor: pointer;
+	display: inline-block;
+	box-sizing: border-box;
+	border-radius: 50%;
+	align-self: center;
+	margin: 0 10px;
+	box-shadow: inset -1px -1px 2px #FFFFFF, 2px 2px 4px #000000;
+	margin: 2%;
+}
+
+.tools .button {
+	align-self: center;
+	width: 100px;
+	height: 40px;
+	border: 2px solid #FFFFFF;
+	cursor: pointer;
+	color: #FFFFFF;
+	background: #222;
+	font-weight: bold;
+	margin: auto;
+	margin-top: 10px;
+	border-radius: 10%;
+}
+
+#buttonSave{
+	background: #1EB413;
+}
+
+.pincelFlex{
+	display: flex;
+	flex-direction: row;
+}
+
+.color-picker {
+	align-self: center;
+	margin: auto;
+	height: 50px;
+	width: 50px;
+}
+
+.pen-range {
+	align-self: center;
+	margin: auto;
+	margin-top: 10px;
+}
+
+.color-palette {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	padding-left: 10%;
+	padding-bottom: 10%;
+}
+
+#info{
+	font-size: x-large;	
+	color: black;
+	width: 350px;
+	height: auto;
+	text-align: center;
+	align-self: center;
+	background-color: #8aebff;
+	border: 4px solid;
+	border-color: yellow;
+	border-radius: 5%;
+	margin-left: 100px;
+	padding: 5px;
+}
+
+.gridBottom{
+	margin: 0px;
+	margin-top: 5px;
+	margin-left: 30px;
+	display: grid;
+	height: 50px;
+	width: 600px;
+	grid-template-columns: 4fr 1fr;
+}
+
+
+.felicidades{
+	display: none;
+	width: 100vw;
+	height: auto;
+	font-size: xx-large;
+	color: black;
+	padding: 10px;
+	padding-left: 20%;
+	text-align: center;
+	background-color: #1fff9e;
+}
+
+
+
+
+
+
+
+
+
+
+

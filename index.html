@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Sticker Game</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<script src="https://kit.fontawesome.com/fb647af2cd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="felicidades" id="felicidades">CONGRATULATIONS!!! You have placed all stickers correctly!!</div>
+	<div class="principal">
+		<div class="characters" id="characters">
+			<div class="grid">
+				<div class="imgEmily"><img onClick="change_image(this)" src="https://res.cloudinary.com/geracloud/image/upload/v1612611706/Emily_q4sjsg.png" alt="Emily" id="emily" class="img"></div>
+				<div class="imgCast"><img src="https://res.cloudinary.com/geracloud/image/upload/v1612565526/MeetTheCastLetter_dtibsp.png"
+				id="meet_the_cast" alt="Meet The Cast" class="imgCast"></div>	
+				<div class="imgKing"><img onClick="change_image(this)" src="https://res.cloudinary.com/geracloud/image/upload/v1612611706/KingNahab_kibxme.png" alt="KingNahab" id="kingNahab" class="img"></div>
+				<div class="imgMuddy"><img onClick="change_image(this)" src="https://res.cloudinary.com/geracloud/image/upload/v1612611706/Muddy_f1emcd.png" alt="Muddy" id="muddy" class="img"></div>
+				<div class="imgPrinceAli"><img onClick="change_image(this)" src="https://res.cloudinary.com/geracloud/image/upload/v1612611706/PrinceAli_m9g113.png" alt="Prince Ali" id="princeAli" class="img"></div>
+				<div class="imgMarsala"><img onClick="change_image(this)" src="https://res.cloudinary.com/geracloud/image/upload/v1612611706/Marsala_df5erf.png" alt="Marsala" id="marsala" class="img"></div>
+				<div class="imgPrinceSaladam"><img onClick="change_image(this)" src="https://res.cloudinary.com/geracloud/image/upload/v1612611706/PrinceSaladam_anufi2.png" alt="Prince Saladam" id="princeSaladam" class="img"></div>
+				<div class="imgSasha"><img onClick="change_image(this)" src="https://res.cloudinary.com/geracloud/image/upload/v1612611707/Sasha_ticnty.png" alt="Sasha" id="sasha" class="img"></div>
+				<div class="imgTutTut"><img onClick="change_image(this)" src="https://res.cloudinary.com/geracloud/image/upload/v1612611707/TutTut_bvu6bk.png" alt="Tut Tut" id="tutTut" class="img"></div>
+				<div class="imgKoot"><img onClick="change_image(this)" src="https://res.cloudinary.com/geracloud/image/upload/v1612611706/Koot_hwk6vr.png" alt="Koot" id="koot" class="img"></div>
+				<div class="imgSargentRomali"><img onClick="change_image(this)" src="https://res.cloudinary.com/geracloud/image/upload/v1612611707/SargentRomali_gprezt.png" alt="Sargeant Romali" id="sargentRomali" class="img"></div>
+				<div class="imgQueenFala"><img onClick="change_image(this)" src="https://res.cloudinary.com/geracloud/image/upload/v1612611706/QueenFala_lmpppo.png" alt="Queen Fala" id="queenFala" class="img"></div>
+				<div class="imgMrMopsy"><img onClick="change_image(this)" src="https://res.cloudinary.com/geracloud/image/upload/v1612611706/MrMopsy_vs6rv6.png" alt="Mr Mopsy" id="mrMopsy" class="img"></div>
+			</div>	
+		</div>
+
+		<div class="nombres" id="nombres">
+			<img class="pergamino" id="name-tutTut" alt="Tut Tut" src="https://res.cloudinary.com/geracloud/image/upload/v1612686110/pergaminos/nameTutTut_jnkbzp.png">
+			<img class="pergamino" id="name-sargentRomali" alt="Sargeant Romali" src="https://res.cloudinary.com/geracloud/image/upload/v1612686109/pergaminos/nameSargentRomali_qkluca.png">
+			<img class="pergamino" id="name-sasha" alt="Sasha" src="https://res.cloudinary.com/geracloud/image/upload/v1612686109/pergaminos/nameSasha_xccrk0.png">
+			<img class="pergamino" id="name-princeSaladam" alt="Prince Ali" src="https://res.cloudinary.com/geracloud/image/upload/v1612686109/pergaminos/namePrinceSaladam_kjgsao.png">
+			<img class="pergamino" id="name-princeAli" alt="Prince Ali" src="https://res.cloudinary.com/geracloud/image/upload/v1612686109/pergaminos/namePrinceAli_rngkkk.png">
+			<img class="pergamino" id="name-queenFala" alt="Queen Fala" src="https://res.cloudinary.com/geracloud/image/upload/v1612686109/pergaminos/nameQueenFala_cnx3hj.png">
+			<img class="pergamino" id="name-kingNahab" alt="King Nahab" src="https://res.cloudinary.com/geracloud/image/upload/v1612686108/pergaminos/nameKingNahab_whv6be.png">
+			<img class="pergamino" id="name-marsala" alt="Marsala" src="https://res.cloudinary.com/geracloud/image/upload/v1612686108/pergaminos/nameMarsala_kpinec.png">
+			<img class="pergamino" id="name-muddy" alt="Muddy" src="https://res.cloudinary.com/geracloud/image/upload/v1612686108/pergaminos/nameMuddy_wy4ova.png">
+			<img class="pergamino" id="name-koot" alt="Koot" src="https://res.cloudinary.com/geracloud/image/upload/v1612686108/pergaminos/nameKoot_kmxyrf.png">
+			<img class="pergamino" id="name-emily" alt="Emily" src="https://res.cloudinary.com/geracloud/image/upload/v1612686108/pergaminos/nameEmily_wwujws.png">
+			<img class="pergamino" id="name-mrMopsy" alt="Mr Mopsy" src="https://res.cloudinary.com/geracloud/image/upload/v1612686108/pergaminos/nameMrMopsy_wxzlqh.png">
+		</div>
+	</div>
+
+	<div class="field" id="field">
+		<canvas id="canvas"></canvas>
+		<div class="tools">
+			<div class="color-palette">
+				<div onClick="change_color(this)" class="color-field" style="background: #e9e640"></div>
+				<div onClick="change_color(this)" class="color-field" style="background: #edaa3f"></div>
+				<div onClick="change_color(this)" class="color-field" style="background: #f38e3a"></div>
+				<div onClick="change_color(this)" class="color-field" style="background: #e86b3b"></div>
+				<div onClick="change_color(this)" class="color-field" style="background: #f5c7ad"></div>
+				<div onClick="change_color(this)" class="color-field" style="background: #e2a078"></div>
+				<div onClick="change_color(this)" class="color-field" style="background: #ce8775"></div>
+				<div onClick="change_color(this)" class="color-field" style="background: #bc6e58"></div>
+				<div onClick="change_color(this)" class="color-field" style="background: #ebbbb0"></div>
+				<div onClick="change_color(this)" class="color-field" style="background: #f69b9c"></div>
+				<div onClick="change_color(this)" class="color-field" style="background: #6f3d25"></div>
+				<div onClick="change_color(this)" class="color-field" style="background: #47290a"></div>
+				<div onClick="change_color(this)" class="color-field" style="background: #d63336"></div>
+				<div onClick="change_color(this)" class="color-field" style="background: #aebbde"></div>
+				<div onClick="change_color(this)" class="color-field" style="background: #54c5d9"></div>
+				<div onClick="change_color(this)" class="color-field" style="background: #1aaaa1"></div>
+				<div onClick="change_color(this)" class="color-field" style="background: #1495b2"></div>
+				<div onClick="change_color(this)" class="color-field" style="background: #06a96a"></div>
+				<div onClick="change_color(this)" class="color-field" style="background: #1a56a7"></div>
+				<div onClick="change_color(this)" class="color-field" style="background: #de2087"></div>
+				<div onClick="change_color(this)" class="color-field" style="background: #594399"></div>
+				<div onClick="change_color(this)" class="color-field" style="background: #ffffff"></div>
+				<div onClick="change_color(this)" class="color-field" style="background: #9ba1a7"></div>
+				<div onClick="change_color(this)" class="color-field" style="background: #000000"></div>
+			</div>
+			<div class="pincelFlex">
+				<i class="fas fa-paint-brush" id="brush-icon"></i>
+				<input onInput="draw_color = this.value; 
+				let brush = document.getElementById('brush-icon');
+				brush.style.color = draw_color;" 
+				type="color" 
+				class="color-picker"
+				id="colorPicker">
+			</div>
+			
+			<input type="range" min="1" max="100" value="20" class="pen-range"
+			onInput="draw_width = this.value">
+
+
+			<button onClick="clear_canvas()" type="button" class="button">Clear</button>
+			<button onClick="Save()" type="button" class="button" id="buttonSave">Save</button>
+		</div>
+
+	</div>
+
+	<div class="gridBottom" id="gridBottom">
+		<div id="info">Select a Character to Paint</div>
+	</div>
+
+	<img id="rellenoBlanco" style="display: none" src="https://res.cloudinary.com/geracloud/image/upload/v1612578278/FondoBlancoPersonaje_pqlqtk.png">
+			<!-- <img class="pergamino" draggable=true src="https://res.cloudinary.com/geracloud/image/upload/v1612681934/Pergamino_gmtv1d.png"> -->
+
+	<script src="main.js"></script>
+</body>
+</html>
